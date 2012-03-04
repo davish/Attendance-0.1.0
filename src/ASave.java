@@ -14,11 +14,9 @@ public class ASave {
 			FileWriter outFile = new FileWriter(filename);
 			PrintWriter out = new PrintWriter(outFile);
 			
-			// Also could be written as follows on one line
-			// Printwriter out = new PrintWriter(new FileWriter(args[0]));
 		
 			// Write text to file
-			out.println(AWin.IsHere);
+			out.println(AWin.IsHere); // TODO: Loop through to write times of checkin
 			
 			out.close();
 		} catch (IOException e){
